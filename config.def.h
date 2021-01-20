@@ -139,13 +139,13 @@ static Key keys[] = {
 	{ MODKEY,			XK_c,      spawn,          SHCMD("chromium") },
 	{ MODKEY,			XK_n,      spawn,          SHCMD("thunar") },
 	{ MODKEY,			XK_e,      spawn,          SHCMD("rofiemoji") },
+	{ MODKEY,		     	XK_f,      spawn,          SHCMD("catfish") },
 	{ MODKEY,		     	XK_g,      spawn,          SHCMD("galculator") },
 	{ MODKEY,			XK_x,      spawn,          SHCMD("CM_LAUNCHER=rofi clipmenu dmenu -i -p ' ' -theme ~/.config/rofi/themes/vertrmenu.rasi") },
 	{ MODKEY,			XK_slash,      spawn,      SHCMD("dunst-music-notification") },
 
 
 //apps launch with super+shift
-	{ MODKEY|ShiftMask,     	XK_f,      spawn,          SHCMD("catfish") },
 	{ MODKEY|ShiftMask,     	XK_w,      spawn,          SHCMD("networkmanager_dmenu") },
 	{ MODKEY|ShiftMask,     	XK_p,      spawn,          SHCMD("alacritty --class Alacritty,pacman-packages -e sudo pacman -Syu") },
 
