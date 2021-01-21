@@ -7,4 +7,5 @@ My dwm setup has the following patches:
 - barheight
 - switchtotag
 - vanitygaps
+- border opacity
 - seperate branch for config
