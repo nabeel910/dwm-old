@@ -137,7 +137,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_d,      spawn,          SHCMD("rofi -show drun -theme ~/.config/rofi/themes/rmenu.rasi") },
 	{ MODKEY,			XK_w,      spawn,          SHCMD("firefox") },
 	{ MODKEY,			XK_c,      spawn,          SHCMD("chromium") },
-	{ MODKEY,			XK_n,      spawn,          SHCMD("Pcmanfm") },
+	{ MODKEY,			XK_n,      spawn,          SHCMD("pcmanfm") },
 	{ MODKEY,			XK_e,      spawn,          SHCMD("rofiemoji") },
 	{ MODKEY,		     	XK_g,      spawn,          SHCMD("galculator") },
 	{ MODKEY,			XK_x,      spawn,          SHCMD("CM_LAUNCHER=rofi clipmenu dmenu -i -p ' ' -theme ~/.config/rofi/themes/vertrmenu.rasi") },
