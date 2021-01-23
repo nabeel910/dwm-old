@@ -35,10 +35,10 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     switchtotag    isfloating   monitor */
 	{ "Galculator",       NULL,               NULL,         0,                    0,                  1,           -1 },
 	{ "Pavucontrol",      NULL,               NULL,         0,                    0,                  1,           -1 },
-	{ "LibreWolf",          NULL,               NULL,         1 ,                   1,                  0,           -1 },
+	{ "LibreWolf",        NULL,               NULL,         1 ,                   1,                  0,           -1 },
 	{ "firefox",          NULL,               NULL,         1 ,                   1,                  0,           -1 },
-	{ "Thunar",           NULL,               NULL,         1 << 1 ,              2,                  0,           -1 },
 	{ "mpv",              NULL,               NULL,         1 << 2,               3,                  0,           -1 },
+	{ "Thunar",           NULL,               NULL,         1 << 1 ,              2,                  0,           -1 },
 	{ "WebApp-AnimeSeries3352",  NULL,        NULL,         1 << 2,               3,                  0,           -1 },
 	{ "WebApp-TVTime8052",NULL,               NULL,         1 << 2,               3,                  0,           -1 },
 	{ "WebApp-Netflix1434",NULL,       	  NULL,         1 << 2,       	      3,		  0,	       -1 },
@@ -136,9 +136,9 @@ static Key keys[] = {
 	{ MODKEY,			XK_d,      spawn,          SHCMD("rofi -show drun -theme ~/.config/rofi/themes/rmenu.rasi") },
 	{ MODKEY,			XK_w,      spawn,          SHCMD("firefox") },
 	{ MODKEY,			XK_c,      spawn,          SHCMD("chromium") },
-	{ MODKEY,			XK_n,      spawn,          SHCMD("thunar") },
 	{ MODKEY,			XK_e,      spawn,          SHCMD("rofiemoji") },
 	{ MODKEY,		     	XK_g,      spawn,          SHCMD("galculator") },
+	{ MODKEY,			XK_n,      spawn,          SHCMD("thunar") },
 	{ MODKEY,			XK_x,      spawn,          SHCMD("CM_LAUNCHER=rofi clipmenu dmenu -i -p ' ' -theme ~/.config/rofi/themes/vertrmenu.rasi") },
 	{ MODKEY,			XK_slash,      spawn,      SHCMD("dunst-music-notification") },
 
