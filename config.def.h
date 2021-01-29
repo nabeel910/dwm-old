@@ -134,7 +134,8 @@ static Key keys[] = {
 
 /*apps launch with superkey*/	
 	{ MODKEY,			XK_d,      spawn,          SHCMD("rofi -show drun -theme ~/.config/rofi/themes/rmenu.rasi") },
-	{ MODKEY,			XK_w,      spawn,          SHCMD("firefox") },
+	{ MODKEY,			XK_w,      spawn,          SHCMD("librewolf") },
+//	{ MODKEY,			XK_w,      spawn,          SHCMD("firefox") },
 	{ MODKEY,			XK_c,      spawn,          SHCMD("chromium") },
 	{ MODKEY,			XK_e,      spawn,          SHCMD("rofiemoji") },
 	{ MODKEY,		     	XK_g,      spawn,          SHCMD("galculator") },
