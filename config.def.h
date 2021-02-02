@@ -133,14 +133,15 @@ static Key keys[] = {
 
 
 /*apps launch with superkey*/	
-	{ MODKEY,			XK_d,      spawn,          SHCMD("rofi -show drun -theme ~/.config/rofi/themes/rmenu.rasi") },
+//	{ MODKEY,			XK_d,      spawn,          SHCMD("rofi -show drun -theme ~/.config/rofi/themes/rmenu.rasi") },
+	{ MODKEY,			XK_d,      spawn,          SHCMD("j4-dmenu") },
 	{ MODKEY,			XK_w,      spawn,          SHCMD("librewolf") },
 //	{ MODKEY,			XK_w,      spawn,          SHCMD("firefox") },
 	{ MODKEY,			XK_c,      spawn,          SHCMD("chromium") },
-	{ MODKEY,			XK_e,      spawn,          SHCMD("rofiemoji") },
+	{ MODKEY,			XK_e,      spawn,          SHCMD("dmenuemoji") },
 	{ MODKEY,		     	XK_g,      spawn,          SHCMD("galculator") },
 	{ MODKEY,			XK_n,      spawn,          SHCMD("thunar") },
-	{ MODKEY,			XK_x,      spawn,          SHCMD("CM_LAUNCHER=rofi clipmenu dmenu -i -p ' ' -theme ~/.config/rofi/themes/vertrmenu.rasi") },
+	{ MODKEY,			XK_x,      spawn,          SHCMD("clipmenu") },
 	{ MODKEY,			XK_slash,      spawn,      SHCMD("dunst-music-notification") },
 
 
@@ -152,10 +153,10 @@ static Key keys[] = {
 	{ Mod1Mask|ControlMask,		XK_w,      spawn,          SHCMD("/usr/lib/firefox/firefox --private-window") },
 	{ Mod1Mask|ControlMask,		XK_c,      spawn,          SHCMD("/usr/bin/chromium --incognito") },
 	{ Mod1Mask|ControlMask,		XK_l,      spawn,          SHCMD("slock") },
-	{ Mod1Mask|ControlMask,		XK_o,      spawn,          SHCMD("rofiprompt 'Reboot computer?' 'systemctl reboot'") },
-	{ Mod1Mask|ControlMask,		XK_s,      spawn,          SHCMD("rofiprompt 'Suspend computer?' 'systemctl suspend'") },
+	{ Mod1Mask|ControlMask,		XK_o,      spawn,          SHCMD("prompt 'Reboot computer?' 'systemctl reboot'") },
+	{ Mod1Mask|ControlMask,		XK_s,      spawn,          SHCMD("prompt 'Suspend computer?' 'systemctl suspend'") },
 	{ Mod1Mask|ControlMask,		XK_p,      spawn,          SHCMD("rofiprompt 'Shutdown computer?' 'systemctl poweroff'") },
-	{ Mod1Mask|ControlMask,		XK_e,      spawn,          SHCMD("rofiprompt 'Logout?' 'killall dwm'") },
+	{ Mod1Mask|ControlMask,		XK_e,      spawn,          SHCMD("prompt 'Logout?' 'killall dwm'") },
 
 // function buttons
 	{ 0, XF86XK_AudioMute,		           spawn,     	   SHCMD("/usr/bin/pulseaudio-ctl mute && sound-notification && kill -39 $(pidof dwmblocks)") },
