@@ -38,6 +38,7 @@ static const Rule rules[] = {
 	{ "LibreWolf",        NULL,               NULL,         1 ,                   1,                  0,           -1 },
 	{ "firefox",          NULL,               NULL,         1 ,                   1,                  0,           -1 },
 	{ "mpv",              NULL,               NULL,         1 << 2,               3,                  0,           -1 },
+	{ "vlc",              NULL,               NULL,         1 << 2,               3,                  0,           -1 },
 	{ "Thunar",           NULL,               NULL,         1 << 1 ,              2,                  0,           -1 },
 	{ "WebApp-AnimeSeries3352",  NULL,        NULL,         1 << 2,               3,                  0,           -1 },
 	{ "WebApp-TVTime8052",NULL,               NULL,         1 << 2,               3,                  0,           -1 },
