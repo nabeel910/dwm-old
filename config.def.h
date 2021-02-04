@@ -36,13 +36,11 @@ static const Rule rules[] = {
 	{ "Galculator",       NULL,               NULL,         0,                    0,                  1,           -1 },
 	{ "Pavucontrol",      NULL,               NULL,         0,                    0,                  1,           -1 },
 	{ "LibreWolf",        NULL,               NULL,         1 ,                   1,                  0,           -1 },
-	{ "firefox",          NULL,               NULL,         1 ,                   1,                  0,           -1 },
+//	{ "firefox",          NULL,               NULL,         1 ,                   1,                  0,           -1 },
 	{ "mpv",              NULL,               NULL,         1 << 2,               3,                  0,           -1 },
 	{ "vlc",              NULL,               NULL,         1 << 2,               3,                  0,           -1 },
-	{ "Thunar",           NULL,               NULL,         1 << 1 ,              2,                  0,           -1 },
+//	{ "Thunar",           NULL,               NULL,         1 << 1 ,              2,                  0,           -1 },
 	{ "WebApp-AnimeSeries3352",  NULL,        NULL,         1 << 2,               3,                  0,           -1 },
-	{ "WebApp-TVTime8052",NULL,               NULL,         1 << 2,               3,                  0,           -1 },
-	{ "WebApp-Netflix1434",NULL,       	  NULL,         1 << 2,       	      3,		  0,	       -1 },
 	{ "Transmission-gtk",  NULL,      	  NULL,         1 << 7,      	      8,                  0,           -1 },
 	{ "pacman-packages",   NULL,      	  NULL,         1 << 8,      	      9,                  0,           -1 },
 	{ "Gnomecast",         NULL,      	  NULL,         0,      	      0,                  1,           -1 }
@@ -66,7 +64,7 @@ static const Layout layouts[] = {
 #define MODKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
-	{ Mod1Mask|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+	{ Mod1Mask|ControlMask,         KEY,      toggleview,     {.ui = 1 << TAG} }, \
 	{ Mod1Mask,		        KEY,      tag,            {.ui = 1 << TAG} }, \
 	{ MODKEY|ShiftMask,		KEY,      tag, 	          {.ui = 1 << TAG} }, \
 	{ MODKEY|ShiftMask,		KEY,      view,		  {.ui = 1 << TAG} }, \
