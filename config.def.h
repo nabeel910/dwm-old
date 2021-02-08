@@ -39,7 +39,6 @@ static const Rule rules[] = {
 //	{ "firefox",          NULL,               NULL,         1 ,                   1,                  0,           -1 },
 	{ "mpv",              NULL,               NULL,         1 << 2,               3,                  0,           -1 },
 	{ "vlc",              NULL,               NULL,         1 << 2,               3,                  0,           -1 },
-//	{ "Thunar",           NULL,               NULL,         1 << 1 ,              2,                  0,           -1 },
 	{ "WebApp-AnimeSeries3352",  NULL,        NULL,         1 << 2,               3,                  0,           -1 },
 	{ "Transmission-gtk",  NULL,      	  NULL,         1 << 7,      	      8,                  0,           -1 },
 	{ "pacman-packages",   NULL,      	  NULL,         1 << 8,      	      9,                  0,           -1 },
@@ -139,7 +138,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_c,      spawn,          SHCMD("chromium") },
 	{ MODKEY,			XK_e,      spawn,          SHCMD("dmenuemoji") },
 	{ MODKEY,		     	XK_g,      spawn,          SHCMD("galculator") },
-	{ MODKEY,			XK_n,      spawn,          SHCMD("Pcmanfm") },
+	{ MODKEY,			XK_n,      spawn,          SHCMD("pcmanfm") },
 	{ MODKEY,			XK_x,      spawn,          SHCMD("clipmenu -i -p ' '") },
 	{ MODKEY,			XK_slash,      spawn,      SHCMD("dunst-music-notification") },
 
@@ -147,7 +146,7 @@ static Key keys[] = {
 //apps launch with super+shift
 	{ MODKEY|ShiftMask,     	XK_w,      spawn,          SHCMD("networkmanager_dmenu") },
 	{ MODKEY|ShiftMask,     	XK_p,      spawn,          SHCMD("alacritty --class Alacritty,pacman-packages -e sudo pacman -Syu") },
-	{ Mod1Mask|ShiftMask,		XK_e,      spawn,          SHCMD("dmenuprompt 'Logout?' 'killall dwm'") },
+	{ MODKEY|ShiftMask,		XK_e,      spawn,          SHCMD("dmenuprompt 'Logout?' 'killall dwm'") },
 
 //apps launch with ctrl+alt
 	{ Mod1Mask|ControlMask,		XK_w,      spawn,          SHCMD("/usr/lib/firefox/firefox --private-window") },
