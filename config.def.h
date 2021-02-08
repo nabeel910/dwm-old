@@ -139,7 +139,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_c,      spawn,          SHCMD("chromium") },
 	{ MODKEY,			XK_e,      spawn,          SHCMD("dmenuemoji") },
 	{ MODKEY,		     	XK_g,      spawn,          SHCMD("galculator") },
-	{ MODKEY,			XK_n,      spawn,          SHCMD("thunar") },
+	{ MODKEY,			XK_n,      spawn,          SHCMD("Pcmanfm") },
 	{ MODKEY,			XK_x,      spawn,          SHCMD("clipmenu -i -p ' '") },
 	{ MODKEY,			XK_slash,      spawn,      SHCMD("dunst-music-notification") },
 
@@ -147,6 +147,7 @@ static Key keys[] = {
 //apps launch with super+shift
 	{ MODKEY|ShiftMask,     	XK_w,      spawn,          SHCMD("networkmanager_dmenu") },
 	{ MODKEY|ShiftMask,     	XK_p,      spawn,          SHCMD("alacritty --class Alacritty,pacman-packages -e sudo pacman -Syu") },
+	{ Mod1Mask|ShiftMask,		XK_e,      spawn,          SHCMD("dmenuprompt 'Logout?' 'killall dwm'") },
 
 //apps launch with ctrl+alt
 	{ Mod1Mask|ControlMask,		XK_w,      spawn,          SHCMD("/usr/lib/firefox/firefox --private-window") },
@@ -155,7 +156,7 @@ static Key keys[] = {
 	{ Mod1Mask|ControlMask,		XK_o,      spawn,          SHCMD("dmenuprompt 'Reboot computer?' 'systemctl reboot'") },
 	{ Mod1Mask|ControlMask,		XK_s,      spawn,          SHCMD("dmenuprompt 'Suspend computer?' 'systemctl suspend'") },
 	{ Mod1Mask|ControlMask,		XK_p,      spawn,          SHCMD("dmenuprompt 'Shutdown computer?' 'systemctl poweroff'") },
-	{ Mod1Mask|ControlMask,		XK_e,      spawn,          SHCMD("dmenuprompt 'Logout?' 'killall dwm'") },
+	{ Mod1Mask|ControlMask,		XK_e,      spawn,          SHCMD("dmenuprompt 'Logout?' 'killall xinit'") },
 
 // function buttons
 	{ 0, XF86XK_AudioMute,		           spawn,     	   SHCMD("/usr/bin/pulseaudio-ctl mute && sound-notification && kill -39 $(pidof dwmblocks)") },
