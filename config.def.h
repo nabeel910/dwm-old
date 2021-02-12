@@ -14,7 +14,7 @@ static const int user_bh            = 35;        /* 0 means that dwm will calcul
 static const char *fonts[]          = { "SFMono Nerd Font:size=13","Noto Color Emoji:pixelsize=14:antialias=true:autohint=true" };
 static const char dmenufont[]       = "SFMono Nerd Font:size=13";
 static const char searchsymbol[]    = " ";
-static const char highpriority[]    = "chromium,librewolf ";
+static const char highpriority[]    = "chromium,librewolf";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -76,7 +76,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, "-p", searchsymbol, "-h", highpriority, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, "-p", searchsymbol, "-hp", highpriority, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 
 static Key keys[] = {
