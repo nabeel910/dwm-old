@@ -1,11 +1,11 @@
 My dwm setup has the following patches: 
 
 - Emoji support with libxft-bgra
-- actualfullscreen
-- noborder
-- autostart
-- barheight
-- switchtotag
+- actual fullscreen
+- no border
+- bar height
+- switch to tag
+- focus on active
 - vanitygaps
 - border opacity
 - seperate branch for config
