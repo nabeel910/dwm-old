@@ -14,7 +14,7 @@ static const int user_bh            = 35;        /* 0 means that dwm will calcul
 static const char *fonts[]          = { "SFMono Nerd Font:size=13","Noto Color Emoji:pixelsize=14:antialias=true:autohint=true" };
 static const char dmenufont[]       = "SFMono Nerd Font:size=13";
 static const char searchsymbol[]    = " ";
-static const char highpriority[]    = "chromium,librewolf,animeseries,whatsapp,nitrogen,lxappearance,lxtask,pcmanfm,bitwarden,writer,impress";
+static const char highpriority[]    = "chromium,librewolf,animeseries,whatsapp,nitrogen,lxappearance,lxtask,pcmanfm,bitwarden,writer,impress,transmission-gtk";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
