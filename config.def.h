@@ -149,7 +149,7 @@ static Key keys[] = {
 
 //apps launch with super+shift
 	{ MODKEY|ShiftMask,     	XK_w,      spawn,          SHCMD("networkmanager_dmenu") },
-	{ MODKEY|ShiftMask,     	XK_p,      spawn,          SHCMD("alacritty --class Alacritty,pacman-packages -e sudo pacman -Syu") },
+	{ MODKEY|ShiftMask,     	XK_p,      spawn,          SHCMD("st -e paru -Syu") },
 	{ MODKEY|ShiftMask,		XK_e,      spawn,          SHCMD("dmenuprompt 'Restart dwm?' 'killall dwm'") },
 
 //apps launch with ctrl+alt
