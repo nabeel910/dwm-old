@@ -41,7 +41,7 @@ static const Rule rules[] = {
 	{ "Pavucontrol",      NULL,               NULL,         0,                    0,                  1,           -1 },
 	{ "LibreWolf",        NULL,               NULL,         1 ,                   1,                  0,           -1 },
 //	{ "firefox",          NULL,               NULL,         1 ,                   1,                  0,           -1 },
-	{ "mpv",              NULL,               NULL,         1 << 2,               3,                  0,           -1 },
+	{ "mpv",              NULL,               NULL,         1 << 5,               3,                  0,           -1 },
 	{ "vlc",              NULL,               NULL,         1 << 2,               3,                  0,           -1 },
 	{ "WebApp-AnimeSeries3352",  NULL,        NULL,         1 << 2,               3,                  0,           -1 },
 	{ "Transmission-gtk",  NULL,      	  NULL,         1 << 7,      	      8,                  0,           -1 },
