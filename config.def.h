@@ -154,8 +154,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_e,      spawn,          SHCMD("dmenuprompt 'Restart dwm?' 'killall dwm'") },
 
 //apps launch with ctrl+alt
-	{ Mod1Mask|ControlMask,		XK_w,      spawn,          SHCMD("/usr/lib/firefox/firefox --private-window") },
-	{ Mod1Mask|ControlMask,		XK_c,      spawn,          SHCMD("/usr/bin/chromium --incognito") },
+	{ Mod1Mask|ControlMask,		XK_w,      spawn,          SHCMD("librewolf --private-window") },
+	{ Mod1Mask|ControlMask,		XK_c,      spawn,          SHCMD("chromium --incognito") },
 	{ Mod1Mask|ControlMask,		XK_l,      spawn,          SHCMD("slock") },
 	{ Mod1Mask|ControlMask,		XK_o,      spawn,          SHCMD("dmenuprompt 'Reboot computer?' 'systemctl reboot'") },
 	{ Mod1Mask|ControlMask,		XK_s,      spawn,          SHCMD("dmenuprompt 'Suspend computer?' 'systemctl suspend'") },
