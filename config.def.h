@@ -16,10 +16,10 @@ static const char dmenufont[]       = "SFMono Nerd Font:size=13";
 static const char searchsymbol[]    = " ";
 static const char highpriority[]    = "chromium,librewolf,animeseries,whatsapp,nitrogen,lxappearance,lxtask,pcmanfm,bitwarden,writer,impress,transmission-gtk";
 //static const char col_gray1[]       = "#222222";
-static const char col_gray1[]       = "#383C4A";
+static const char col_gray1[]       = "#2F343F";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#383C4A";
+static const char col_gray4[]       = "#2F343F";
 static const char col_cyan[]        = "#5294E2";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
