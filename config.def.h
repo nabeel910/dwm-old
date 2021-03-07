@@ -15,14 +15,12 @@ static const char *fonts[]          = { "SFMono Nerd Font:size=12","Noto Color E
 static const char dmenufont[]       = "SFMono Nerd Font:size=13";
 static const char searchsymbol[]    = " ";
 static const char highpriority[]    = "chromium,librewolf,animeseries,whatsapp,nitrogen,lxappearance,lxtask,pcmanfm,bitwarden,writer,impress,transmission-gtk";
-static const char col_gray1[]       = "#222222";
+//static const char col_gray1[]       = "#222222";
+static const char col_gray1[]       = "#383C4A";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
-//static const char col_gray4[]       = "#eeeeee";
-static const char col_gray4[]       = "#222222";
-//static const char col_cyan[]        = "#4FA2BF";
+static const char col_gray4[]       = "#383C4A";
 static const char col_cyan[]        = "#5294E2";
-//static const char col_cyan[]        = "#ffb52a";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
