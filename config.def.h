@@ -19,8 +19,7 @@ static const char highpriority[]    = "chromium,librewolf,animeseries,whatsapp,n
 static const char col_gray1[]       = "#2F343F";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
-//arc-gtk//static const char col_gray4[]       = "#2F343F";
-static const char col_gray4[]       = "#22252C";
+static const char col_gray4[]       = "#2F343F";
 static const char col_cyan[]        = "#5294E2";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
