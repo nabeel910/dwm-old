@@ -142,7 +142,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_c,      spawn,          SHCMD("chromium") },
 	{ MODKEY,			XK_e,      spawn,          SHCMD("dmenuemoji") },
 	{ MODKEY,		     	XK_g,      spawn,          SHCMD("galculator") },
-	{ MODKEY,			XK_n,      spawn,          SHCMD("thunar") },
+	{ MODKEY,			XK_n,      spawn,          SHCMD("pcmanfm") },
 	{ MODKEY,			XK_m,      spawn,          SHCMD("audacious") },
 	{ MODKEY,			XK_x,      spawn,          SHCMD("clipmenu -i -p ' '") },
 	{ MODKEY,			XK_slash,      spawn,      SHCMD("dunst-music-notification") },
