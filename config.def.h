@@ -11,15 +11,15 @@ static const int smartgaps          = 1;        /* 1 means no outer gap when the
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int user_bh            = 35;        /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
-static const char *fonts[]          = { "SFMono Nerd Font:size=12","Noto Color Emoji:pixelsize=14:antialias=true:autohint=true" };
-static const char dmenufont[]       = "SFMono Nerd Font:size=13";
+static const char *fonts[]          = { "SFMono Nerd Font:size=11","Noto Color Emoji:pixelsize=14:antialias=true:autohint=true" };
+static const char dmenufont[]       = "SFMono Nerd Font:size=11";
 static const char searchsymbol[]    = " ";
 static const char highpriority[]    = "chromium,librewolf,animeseries,whatsapp,nitrogen,lxappearance,lxtask,pcmanfm,bitwarden,writer,impress,transmission-gtk";
 //static const char col_gray1[]       = "#222222";
-static const char col_gray1[]       = "#353535";
+static const char col_gray1[]       = "#2d2d2d";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#353535";
+static const char col_gray4[]       = "#2d2d2d";
 static const char col_cyan[]        = "#5294E2";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -40,9 +40,10 @@ static const Rule rules[] = {
 	{ "Pavucontrol",      NULL,               NULL,         0,                    0,                  1,           -1 },
 	{ "LibreWolf",        NULL,               NULL,         1 ,                   1,                  0,           -1 },
 //	{ "firefox",          NULL,               NULL,         1 ,                   1,                  0,           -1 },
-	{ "mpv",              NULL,               NULL,         1 << 4,               3,                  0,           -1 },
+	{ "mpv",              NULL,               NULL,         1 << 2,               3,                  0,           -1 },
 	{ "vlc",              NULL,               NULL,         1 << 2,               3,                  0,           -1 },
 	{ "WebApp-AnimeSeries3352",  NULL,        NULL,         1 << 2,               3,                  0,           -1 },
+	{ "WebApp-Whatsapp6569", 	NULL,     NULL,         1 << 5,               3,                  0,           -1 },
 	{ "Transmission-gtk",  NULL,      	  NULL,         1 << 7,      	      8,                  0,           -1 },
 	{ "pacman-packages",   NULL,      	  NULL,         1 << 8,      	      9,                  0,           -1 },
 	{ "Gnomecast",         NULL,      	  NULL,         0,      	      0,                  1,           -1 }
