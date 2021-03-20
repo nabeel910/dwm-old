@@ -28,8 +28,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-/*static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };*/
-static const char *tags[] = { "爵", "", "磊", "", "", "", "", "", "" };
+static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -43,7 +42,7 @@ static const Rule rules[] = {
 //	{ "firefox",          NULL,               NULL,         1 ,                   1,                  0,           -1 },
 	{ "mpv",              NULL,               NULL,         1 << 4,               3,                  0,           -1 },
 	{ "vlc",              NULL,               NULL,         1 << 2,               3,                  0,           -1 },
-	{ "WebApp-AnimeSeries3352",  NULL,        NULL,         1 << 6,               3,                  0,           -1 },
+	{ "WebApp-AnimeSeries3352",  NULL,        NULL,         1 << 2,               3,                  0,           -1 },
 	{ "Transmission-gtk",  NULL,      	  NULL,         1 << 7,      	      8,                  0,           -1 },
 	{ "pacman-packages",   NULL,      	  NULL,         1 << 8,      	      9,                  0,           -1 },
 	{ "Gnomecast",         NULL,      	  NULL,         0,      	      0,                  1,           -1 }
