@@ -35,18 +35,18 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     switchtotag    isfloating   monitor */
-	{ "Galculator",       NULL,               NULL,         0,                    0,                  1,           -1 },
-	{ "Pavucontrol",      NULL,               NULL,         0,                    0,                  1,           -1 },
-	{ "LibreWolf",        NULL,               NULL,         1 ,                   1,                  0,           -1 },
-//	{ "firefox",          NULL,               NULL,         1 ,                   1,                  0,           -1 },
-	{ "mpv",              NULL,               NULL,         1 << 2,               3,                  0,           -1 },
-	{ "vlc",              NULL,               NULL,         1 << 2,               3,                  0,           -1 },
-	{ "WebApp-AnimeSeries3352",  NULL,        NULL,         1 << 2,               3,                  0,           -1 },
-	{ "WebApp-Whatsapp6569", 	NULL,     NULL,         1 << 5,               3,                  0,           -1 },
-	{ "Transmission-gtk",  NULL,      	  NULL,         1 << 7,      	      8,                  0,           -1 },
-	{ "pacman-packages",   NULL,      	  NULL,         1 << 8,      	      9,                  0,           -1 },
-	{ "Gnomecast",         NULL,      	  NULL,         0,      	      0,                  1,           -1 }
+	/* class      			instance    title       tags mask     	     switchtotag          isfloating   monitor */
+	{ "Galculator",       		NULL,        NULL,         0,                    0,                  1,           -1 },
+	{ "Pavucontrol",      		NULL,        NULL,         0,                    0,                  1,           -1 },
+	{ "LibreWolf",        		NULL,        NULL,         1 ,                   1,                  0,           -1 },
+//	{ "firefox",          		NULL,        NULL,         1 ,                   1,                  0,           -1 },
+	{ "mpv",              		NULL,        NULL,         1 << 2,               3,                  0,           -1 },
+	{ "vlc",              		NULL,        NULL,         1 << 2,               3,                  0,           -1 },
+	{ "WebApp-AnimeSeries3352",     NULL,        NULL,         1 << 2,               3,                  0,           -1 },
+	{ "WebApp-Whatsapp6569", 	NULL,        NULL,         1 << 5,               3,                  0,           -1 },
+	{ "Transmission-gtk",  		NULL,        NULL,         1 << 7,      	 8,                  0,           -1 },
+	{ "pacman-packages",   		NULL,        NULL,         1 << 8,      	 9,                  0,           -1 },
+	{ "Gnomecast",         		NULL,        NULL,         0,      	      	 0,                  1,           -1 }
 };
 
 /* layout(s) */
