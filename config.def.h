@@ -146,6 +146,7 @@ static Key keys[] = {
 	{ MODKEY,		     	XK_t,      spawn,          SHCMD("pirokit") },
 	{ MODKEY,			XK_n,      spawn,          SHCMD("pcmanfm") },
 	{ MODKEY,			XK_a,      spawn,          SHCMD("animeseries") },
+	{ MODKEY,			XK_y,      spawn,          SHCMD("freetube") },
 	{ MODKEY,			XK_m,      spawn,          SHCMD("audacious") },
 	{ MODKEY,			XK_x,      spawn,          SHCMD("clipmenu -i -p ' '") },
 	{ MODKEY,			XK_slash,      spawn,      SHCMD("dunst-music-notification") },
