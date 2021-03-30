@@ -40,6 +40,7 @@ static const Rule rules[] = {
 	{ "LibreWolf",        		NULL,        NULL,         1 ,                   1,                  0,           -1 },
 //	{ "firefox",          		NULL,        NULL,         1 ,                   1,                  0,           -1 },
 	{ "mpv",              		NULL,        NULL,         1 << 2,               1,                  0,           -1 },
+	{ "FreeTube",              	NULL,        NULL,         1 ,               	 1,                  0,           -1 },
 	{ "vlc",              		NULL,        NULL,         1 << 2,               1,                  0,           -1 },
 	{ "WebApp-AnimeSeries3352",     NULL,        NULL,         1 << 2,               1,                  0,           -1 },
 	{ "WebApp-Whatsapp6569", 	NULL,        NULL,         1 << 5,               1,                  0,           -1 },
