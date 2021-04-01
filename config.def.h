@@ -165,7 +165,7 @@ static Key keys[] = {
 	{ Mod1Mask|ControlMask,		XK_o,      spawn,          SHCMD("dmenuprompt 'Reboot computer?' 'systemctl reboot'") },
 	{ Mod1Mask|ControlMask,		XK_s,      spawn,          SHCMD("dmenuprompt 'Suspend computer?' 'systemctl suspend'") },
 	{ Mod1Mask|ControlMask,		XK_p,      spawn,          SHCMD("dmenuprompt 'Shutdown computer?' 'systemctl poweroff'") },
-	{ Mod1Mask|ControlMask,		XK_e,      spawn,          SHCMD("dmenuprompt 'Logout?' 'killall xinit'") },
+	{ Mod1Mask|ControlMask,		XK_e,      spawn,          SHCMD("dmenuprompt 'Logout?' 'killall startdwm'") },
 
 // function buttons
 	{ 0, XF86XK_AudioMute,		           spawn,     	   SHCMD("/usr/bin/pulseaudio-ctl mute && sound-notification && kill -39 $(pidof dwmblocks)") },
