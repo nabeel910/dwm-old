@@ -14,7 +14,7 @@ static const int user_bh            = 30;        /* 0 means that dwm will calcul
 static const char *fonts[]          = { "SFMono Nerd Font:size=11","Noto Color Emoji:pixelsize=14:antialias=true:autohint=true" };
 static const char dmenufont[]       = "SFMono Nerd Font:size=11";
 static const char searchsymbol[]    = " ";
-static const char highpriority[]    = "chromium,librewolf,animeseries,whatsapp,nitrogen,lxappearance,lxtask,pcmanfm,bitwarden,writer,impress,transmission-gtk";
+static const char highpriority[]    = "chromium,librewolf,animeseries,whatsapp,nitrogen,lxappearance,lxtask,pcmanfm,thunar,bitwarden,writer,impress,transmission-gtk";
 static const char col_gray1[]       = "#2d2d2d";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -144,7 +144,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_e,      spawn,          SHCMD("dmenuemoji") },
 	{ MODKEY,		     	XK_g,      spawn,          SHCMD("galculator") },
 	{ MODKEY,		     	XK_t,      spawn,          SHCMD("pirokit") },
-	{ MODKEY,			XK_n,      spawn,          SHCMD("pcmanfm") },
+	{ MODKEY,			XK_n,      spawn,          SHCMD("thunar") },
 	{ MODKEY,			XK_a,      spawn,          SHCMD("animeseries") },
 	{ MODKEY,			XK_y,      spawn,          SHCMD("freetube") },
 	{ MODKEY,			XK_m,      spawn,          SHCMD("audacious") },
