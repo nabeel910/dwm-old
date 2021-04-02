@@ -145,6 +145,7 @@ static Key keys[] = {
 	{ MODKEY,		     	XK_g,      spawn,          SHCMD("galculator") },
 	{ MODKEY,		     	XK_t,      spawn,          SHCMD("pirokit") },
 	{ MODKEY,			XK_n,      spawn,          SHCMD("thunar") },
+	{ MODKEY,			XK_r,      spawn,          SHCMD("st -e newsboat") },
 	{ MODKEY,			XK_a,      spawn,          SHCMD("animeseries") },
 	{ MODKEY,			XK_y,      spawn,          SHCMD("freetube") },
 	{ MODKEY,			XK_m,      spawn,          SHCMD("audacious") },
