@@ -154,7 +154,7 @@ static Key keys[] = {
 
 
 //apps launch with super+shift
-	{ MODKEY|ShiftMask,     	XK_w,      spawn,          SHCMD("networkmanager_dmenu") },
+	{ MODKEY|ShiftMask,     	XK_w,      spawn,          SHCMD("st -e sudo connman_dmenu") },
 	{ MODKEY|ShiftMask,     	XK_c,      spawn,          SHCMD("dmenu_config") },
 	{ MODKEY|ShiftMask,     	XK_p,      spawn,          SHCMD("st -c pacman-packages -t update  -e paru -Syu") },
 	{ MODKEY|ShiftMask,		XK_e,      spawn,          SHCMD("dmenuprompt 'Restart dwm?' 'killall dwm'") },
@@ -163,9 +163,9 @@ static Key keys[] = {
 	{ Mod1Mask|ControlMask,		XK_w,      spawn,          SHCMD("librewolf --private-window") },
 	{ Mod1Mask|ControlMask,		XK_c,      spawn,          SHCMD("chromium --incognito") },
 	{ Mod1Mask|ControlMask,		XK_l,      spawn,          SHCMD("slock") },
-	{ Mod1Mask|ControlMask,		XK_o,      spawn,          SHCMD("dmenuprompt 'Reboot computer?' 'systemctl reboot'") },
-	{ Mod1Mask|ControlMask,		XK_s,      spawn,          SHCMD("dmenuprompt 'Suspend computer?' 'systemctl suspend'") },
-	{ Mod1Mask|ControlMask,		XK_p,      spawn,          SHCMD("dmenuprompt 'Shutdown computer?' 'systemctl poweroff'") },
+	{ Mod1Mask|ControlMask,		XK_o,      spawn,          SHCMD("dmenuprompt 'Reboot computer?' 'loginctl reboot'") },
+	{ Mod1Mask|ControlMask,		XK_s,      spawn,          SHCMD("dmenuprompt 'Suspend computer?' 'loginctl suspend'") },
+	{ Mod1Mask|ControlMask,		XK_p,      spawn,          SHCMD("dmenuprompt 'Shutdown computer?' 'loginctl poweroff'") },
 	{ Mod1Mask|ControlMask,		XK_e,      spawn,          SHCMD("dmenuprompt 'Logout?' 'killall startdwm'") },
 
 // function buttons
