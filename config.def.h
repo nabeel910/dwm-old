@@ -146,7 +146,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_c,      spawn,          SHCMD("chromium") },
 	{ MODKEY,			XK_e,      spawn,          SHCMD("dmenuemoji") },
 	{ MODKEY,		     	XK_g,      spawn,          SHCMD("galculator") },
-	{ MODKEY,		     	XK_t,      spawn,          SHCMD("pirokit") },
+	{ MODKEY,     			XK_t,      spawn,          SHCMD("st -c stig -t stig  -e stig") },
 	{ MODKEY,			XK_n,      spawn,          SHCMD("thunar") },
 	{ MODKEY,			XK_r,      spawn,          SHCMD("st -e newsboat") },
 	{ MODKEY,			XK_a,      spawn,          SHCMD("animeseries") },
@@ -161,8 +161,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,     	XK_c,      spawn,          SHCMD("dmenu_config") },
 	{ MODKEY|ShiftMask,     	XK_p,      spawn,          SHCMD("st -c pacman-packages -t update  -e paru -Syu") },
 	{ MODKEY|ShiftMask,     	XK_v,      spawn,          SHCMD("st -c set-bg -t set-bg  -e viewwalls") },
-	{ MODKEY|ShiftMask,     	XK_t,      spawn,          SHCMD("st -c stig -t stig  -e stig") },
 	{ MODKEY|ShiftMask,		XK_e,      spawn,          SHCMD("dmenuprompt 'Restart dwm?' 'killall dwm'") },
+	{ MODKEY|ShiftMask,		XK_t,      spawn,          SHCMD("pirokit") },
 
 //apps launch with ctrl+alt
 	{ Mod1Mask|ControlMask,		XK_w,      spawn,          SHCMD("librewolf --private-window") },
