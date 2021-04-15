@@ -47,8 +47,8 @@ static const Rule rules[] = {
 	{ "WebApp-AnimeSeries3352",     NULL,        NULL,         1 << 2,               1,                  0,           -1 },
 	{ "WebApp-Whatsapp6569", 	NULL,        NULL,         1 << 5,               1,                  0,           -1 },
 	{ "Transmission-gtk",  		NULL,        NULL,         1 << 7,      	 1,                  0,           -1 },
+	{ "stig",  		NULL,        NULL,         1 << 7,      	 1,                  0,           -1 },
 	{ "pacman-packages",   		NULL,        NULL,         1 << 8,      	 1,                  0,           -1 },
-	{ "bg-set",   			NULL,        NULL,         1 << 6,      	 0,                  0,           -1 },
 	{ "Gnomecast",         		NULL,        NULL,         0,      	      	 0,                  1,           -1 }
 };
 
@@ -161,6 +161,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,     	XK_c,      spawn,          SHCMD("dmenu_config") },
 	{ MODKEY|ShiftMask,     	XK_p,      spawn,          SHCMD("st -c pacman-packages -t update  -e paru -Syu") },
 	{ MODKEY|ShiftMask,     	XK_v,      spawn,          SHCMD("st -c set-bg -t set-bg  -e viewwalls") },
+	{ MODKEY|ShiftMask,     	XK_t,      spawn,          SHCMD("st -c stig -t stig  -e stig") },
 	{ MODKEY|ShiftMask,		XK_e,      spawn,          SHCMD("dmenuprompt 'Restart dwm?' 'killall dwm'") },
 
 //apps launch with ctrl+alt
