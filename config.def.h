@@ -15,11 +15,11 @@ static const char *fonts[]          = { "Roboto Mono Nerd Font:size=11","Noto Co
 static const char dmenufont[]       = "Roboto Mono Nerd Font:size=11";
 static const char searchsymbol[]    = " ";
 static const char highpriority[]    = "chromium,librewolf,animeseries,whatsapp,nitrogen,lxappearance,lxtask,pcmanfm,thunar,bitwarden,writer,impress,transmission-gtk";
-static const char col_gray1[]       = "#282C34";
+static const char col_gray1[]       = "#191724";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#ABB2BF";
 static const char col_gray4[]       = "#282C34";
-static const char col_cyan[]        = "#E06C75";
+static const char col_cyan[]        = "#6F5B94";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -81,7 +81,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, "-p", searchsymbol, "-hp", highpriority, NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "alacritty", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -145,12 +145,12 @@ static Key keys[] = {
 	{ MODKEY,			XK_c,      spawn,          SHCMD("chromium") },
 	{ MODKEY,			XK_e,      spawn,          SHCMD("dmenuemoji") },
 	{ MODKEY,		     	XK_g,      spawn,          SHCMD("galculator") },
-	{ MODKEY,     			XK_t,      spawn,          SHCMD("st -c stig -t stig  -e stig") },
+	{ MODKEY,     			XK_t,      spawn,          SHCMD("alacritty --class stig -t stig  -e stig") },
 	{ MODKEY,			XK_n,      spawn,          SHCMD("thunar") },
-	{ MODKEY,			XK_r,      spawn,          SHCMD("st -e newsboat") },
+	{ MODKEY,			XK_r,      spawn,          SHCMD("alacritty -e newsboat") },
 	{ MODKEY,			XK_a,      spawn,          SHCMD("animeseries") },
 	{ MODKEY,			XK_y,      spawn,          SHCMD("freetube") },
-	{ MODKEY,			XK_m,      spawn,          SHCMD("st -e cmus") },
+	{ MODKEY,			XK_m,      spawn,          SHCMD("alacritty -e cmus") },
 	{ MODKEY,			XK_x,      spawn,          SHCMD("clipmenu -i -p ' '") },
 	{ MODKEY,			XK_slash,      spawn,      SHCMD("dunst-music-notification") },
 
@@ -158,8 +158,8 @@ static Key keys[] = {
 //apps launch with super+shift
 	{ MODKEY|ShiftMask,     	XK_w,      spawn,          SHCMD("networkmanager_dmenu") },
 	{ MODKEY|ShiftMask,     	XK_c,      spawn,          SHCMD("dmenu_config") },
-	{ MODKEY|ShiftMask,     	XK_p,      spawn,          SHCMD("st -c pacman-packages -t update  -e paru -Syu") },
-	{ MODKEY|ShiftMask,     	XK_v,      spawn,          SHCMD("st -c set-bg -t set-bg  -e viewwalls") },
+	{ MODKEY|ShiftMask,     	XK_p,      spawn,          SHCMD("alacritty --class pacman-packages -t update  -e paru -Syu") },
+	{ MODKEY|ShiftMask,     	XK_v,      spawn,          SHCMD("alacritty --class set-bg -t set-bg  -e viewwalls") },
 	{ MODKEY|ShiftMask,		XK_e,      spawn,          SHCMD("dmenuprompt 'Restart dwm?' 'killall dwm'") },
 	{ MODKEY|ShiftMask,		XK_t,      spawn,          SHCMD("pirokit") },
 
