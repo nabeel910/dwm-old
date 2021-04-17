@@ -47,6 +47,7 @@ static const Rule rules[] = {
 	{ "WebApp-Whatsapp6569", 	NULL,        NULL,         1 << 5,               1,                  0,           -1 },
 	{ "Transmission-gtk",  		NULL,        NULL,         1 << 7,      	 1,                  0,           -1 },
 	{ "stig",  		NULL,        NULL,         1 << 7,      	 1,                  0,           -1 },
+	{ "tremc",  		NULL,        NULL,         1 << 7,      	 1,                  0,           -1 },
 	{ "pacman-packages",   		NULL,        NULL,         1 << 8,      	 1,                  0,           -1 },
 	{ "Gnomecast",         		NULL,        NULL,         0,      	      	 0,                  1,           -1 }
 };
@@ -145,7 +146,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_c,      spawn,          SHCMD("chromium") },
 	{ MODKEY,			XK_e,      spawn,          SHCMD("dmenuemoji") },
 	{ MODKEY,		     	XK_g,      spawn,          SHCMD("galculator") },
-	{ MODKEY,     			XK_t,      spawn,          SHCMD("st -c stig -t stig  -e stig") },
+	{ MODKEY,     			XK_t,      spawn,          SHCMD("st -c tremc -t tremc  -e tremc") },
 	{ MODKEY,			XK_n,      spawn,          SHCMD("thunar") },
 	{ MODKEY,			XK_r,      spawn,          SHCMD("st -e newsboat") },
 	{ MODKEY,			XK_a,      spawn,          SHCMD("animeseries") },
