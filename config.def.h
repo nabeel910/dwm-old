@@ -161,7 +161,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,     	XK_p,      spawn,          SHCMD("st -c pacman-packages -t update  -e paru -Syu") },
 	{ MODKEY|ShiftMask,     	XK_v,      spawn,          SHCMD("st -c set-bg -t set-bg  -e viewwalls") },
 	{ MODKEY|ShiftMask,		XK_e,      spawn,          SHCMD("dmenuprompt 'Restart dwm?' 'killall dwm'") },
-	{ MODKEY|ShiftMask,		XK_t,      spawn,          SHCMD("pirokit") },
+	{ MODKEY|ShiftMask,		XK_k,      spawn,          SHCMD("pirokit") },
 
 //apps launch with ctrl+alt
 	{ Mod1Mask|ControlMask,		XK_w,      spawn,          SHCMD("librewolf --private-window") },
