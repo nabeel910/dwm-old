@@ -71,12 +71,12 @@ static const Layout layouts[] = {
 /* key definitions */
 #define MODKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
-	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
-	{ Mod1Mask|ControlMask,         KEY,      toggleview,     {.ui = 1 << TAG} }, \
-	{ Mod1Mask,		        KEY,      tag,            {.ui = 1 << TAG} }, \
-	{ MODKEY|ShiftMask,		KEY,      tag, 	          {.ui = 1 << TAG} }, \
-	{ MODKEY|ShiftMask,		KEY,      view,		  {.ui = 1 << TAG} }, \
-	{ Mod1Mask|ControlMask|ShiftMask, KEY,    toggletag,      {.ui = 1 << TAG} },
+	{ MODKEY,                       	KEY,      view,           {.ui = 1 << TAG} }, \
+	{ Mod1Mask|ControlMask,         	KEY,      toggleview,     {.ui = 1 << TAG} }, \
+	{ Mod1Mask,		        	KEY,      tag,            {.ui = 1 << TAG} }, \
+	{ MODKEY|ShiftMask,			KEY,      tag, 	          {.ui = 1 << TAG} }, \
+	{ MODKEY|ShiftMask,			KEY,      view,		  {.ui = 1 << TAG} }, \
+	{ Mod1Mask|ControlMask|ShiftMask, 	KEY,    toggletag,      {.ui = 1 << TAG} },
 
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
@@ -136,15 +136,11 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-//	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 
 
 /*apps launch with superkey*/	
 	{ MODKEY,			XK_d,      spawn,          {.v = dmenucmd } },
-//	{ MODKEY,			XK_d,      spawn,          SHCMD("rofi -show drun -theme ~/.config/rofi/themes/rmenu.rasi") },
-//	{ MODKEY,			XK_d,      spawn,          SHCMD("j4-dmenu") },
 	{ MODKEY,			XK_w,      spawn,          SHCMD("librewolf") },
-//	{ MODKEY,			XK_w,      spawn,          SHCMD("firefox") },
 	{ MODKEY,			XK_c,      spawn,          SHCMD("chromium") },
 	{ MODKEY,			XK_e,      spawn,          SHCMD("dmenuemoji") },
 	{ MODKEY,		     	XK_g,      spawn,          SHCMD("galculator") },
@@ -163,16 +159,12 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,     	XK_c,      spawn,          SHCMD("dmenu_config") },
 	{ MODKEY|ShiftMask,     	XK_p,      spawn,          SHCMD(TERMINAL " --class pacman-packages -t update  -e paru -Syu") },
 	{ MODKEY|ShiftMask,     	XK_v,      spawn,          SHCMD(TERMINAL " --class set-bg -t set-bg  -e viewwalls") },
-//	{ MODKEY|ShiftMask,		XK_e,      spawn,          SHCMD("dmenuprompt 'Restart dwm?' 'killall dwm'") },
 	{ MODKEY|ShiftMask,		XK_k,      spawn,          SHCMD("pirokit") },
 
 //apps launch with ctrl+alt
 	{ Mod1Mask|ControlMask,		XK_w,      spawn,          SHCMD("librewolf --private-window") },
 	{ Mod1Mask|ControlMask,		XK_c,      spawn,          SHCMD("chromium --incognito") },
 	{ Mod1Mask|ControlMask,		XK_l,      spawn,          SHCMD("slock") },
-//	{ Mod1Mask|ControlMask,		XK_o,      spawn,          SHCMD("dmenuprompt 'Reboot computer?' 'loginctl reboot'") },
-//	{ Mod1Mask|ControlMask,		XK_s,      spawn,          SHCMD("dmenuprompt 'Suspend computer?' 'loginctl suspend'") },
-//	{ Mod1Mask|ControlMask,		XK_p,      spawn,          SHCMD("dmenuprompt 'Shutdown computer?' 'loginctl poweroff'") },
 	{ Mod1Mask|ControlMask,		XK_e,      spawn,          SHCMD("dsession") },
 
 // function buttons
