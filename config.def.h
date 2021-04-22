@@ -168,10 +168,10 @@ static Key keys[] = {
 	{ Mod1Mask|ControlMask,		XK_w,      spawn,          SHCMD("librewolf --private-window") },
 	{ Mod1Mask|ControlMask,		XK_c,      spawn,          SHCMD("chromium --incognito") },
 	{ Mod1Mask|ControlMask,		XK_l,      spawn,          SHCMD("slock") },
-	{ Mod1Mask|ControlMask,		XK_o,      spawn,          SHCMD("dmenuprompt 'Reboot computer?' 'loginctl reboot'") },
-	{ Mod1Mask|ControlMask,		XK_s,      spawn,          SHCMD("dmenuprompt 'Suspend computer?' 'loginctl suspend'") },
-	{ Mod1Mask|ControlMask,		XK_p,      spawn,          SHCMD("dmenuprompt 'Shutdown computer?' 'loginctl poweroff'") },
-	{ Mod1Mask|ControlMask,		XK_e,      spawn,          SHCMD("dmenuprompt 'Logout?' 'killall startdwm'") },
+//	{ Mod1Mask|ControlMask,		XK_o,      spawn,          SHCMD("dmenuprompt 'Reboot computer?' 'loginctl reboot'") },
+//	{ Mod1Mask|ControlMask,		XK_s,      spawn,          SHCMD("dmenuprompt 'Suspend computer?' 'loginctl suspend'") },
+//	{ Mod1Mask|ControlMask,		XK_p,      spawn,          SHCMD("dmenuprompt 'Shutdown computer?' 'loginctl poweroff'") },
+	{ Mod1Mask|ControlMask,		XK_e,      spawn,          SHCMD("dsession") },
 
 // function buttons
 	{ 0, XF86XK_AudioMute,		           spawn,     	   SHCMD("/usr/bin/pulseaudio-ctl mute && sound-notification && kill -39 $(pidof dwmblocks)") },
