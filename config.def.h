@@ -148,12 +148,12 @@ static Key keys[] = {
 	{ MODKEY,			XK_c,      spawn,          SHCMD("chromium") },
 	{ MODKEY,			XK_e,      spawn,          SHCMD("dmenuemoji") },
 	{ MODKEY,		     	XK_g,      spawn,          SHCMD("galculator") },
-	{ MODKEY,     			XK_t,      spawn,          SHCMD(TERMINAL "--class tremc -t tremc  -e tremc") },
+	{ MODKEY,     			XK_t,      spawn,          SHCMD(TERMINAL " --class tremc -t tremc  -e tremc") },
 	{ MODKEY,			XK_n,      spawn,          SHCMD("thunar") },
-	{ MODKEY,			XK_r,      spawn,          SHCMD(TERMINAL "-e newsboat") },
+	{ MODKEY,			XK_r,      spawn,          SHCMD(TERMINAL " -e newsboat") },
 	{ MODKEY,			XK_a,      spawn,          SHCMD("animeseries") },
 	{ MODKEY,			XK_y,      spawn,          SHCMD("freetube") },
-	{ MODKEY,			XK_m,      spawn,          SHCMD("TERMINAL -e cmus") },
+	{ MODKEY,			XK_m,      spawn,          SHCMD(TERMINAL " -e cmus") },
 	{ MODKEY,			XK_x,      spawn,          SHCMD("clipmenu -i -p ' '") },
 	{ MODKEY,			XK_slash,      spawn,      SHCMD("dunst-music-notification") },
 
@@ -161,8 +161,8 @@ static Key keys[] = {
 //apps launch with super+shift
 	{ MODKEY|ShiftMask,     	XK_w,      spawn,          SHCMD("networkmanager_dmenu") },
 	{ MODKEY|ShiftMask,     	XK_c,      spawn,          SHCMD("dmenu_config") },
-	{ MODKEY|ShiftMask,     	XK_p,      spawn,          SHCMD(TERMINAL "--class pacman-packages -t update  -e paru -Syu") },
-	{ MODKEY|ShiftMask,     	XK_v,      spawn,          SHCMD(TERMINAL "--class set-bg -t set-bg  -e viewwalls") },
+	{ MODKEY|ShiftMask,     	XK_p,      spawn,          SHCMD(TERMINAL " --class pacman-packages -t update  -e paru -Syu") },
+	{ MODKEY|ShiftMask,     	XK_v,      spawn,          SHCMD(TERMINAL " --class set-bg -t set-bg  -e viewwalls") },
 //	{ MODKEY|ShiftMask,		XK_e,      spawn,          SHCMD("dmenuprompt 'Restart dwm?' 'killall dwm'") },
 	{ MODKEY|ShiftMask,		XK_k,      spawn,          SHCMD("pirokit") },
 
