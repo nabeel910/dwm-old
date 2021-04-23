@@ -1,11 +1,26 @@
 My dwm setup has the following patches: 
 
+- Rose-Pine colour scheme
+
 - Emoji support with libxft-bgra
-- actual fullscreen
+
+- fullscreen
+	enter monocle mode and hides the bar
+
 - no border
+	removes border when only one window visible
+
 - bar height
+	default is 30
+
 - switch to tag
+	Adds a rule option to switch to the configured tag when a window opens, then switch back when it closes.
+
 - focus on active
-- vanitygaps
-- border opacity
-- seperate branch for config
+
+- vanitygaps (not enabled by default)
+
+- dmenu hight priority
+
+- alpha patch
+	border opacity fix
