@@ -149,9 +149,9 @@ static Key keys[] = {
 	{ Mod1Mask|ControlMask,		XK_e,      spawn,          SHCMD("dsession") },
 
 // function buttons
-	{ 0, XF86XK_AudioMute,		           spawn,     	   SHCMD("/usr/bin/pulseaudio-ctl mute && sound-notification && kill -39 $(pidof dwmblocks)") },
-	{ 0, XF86XK_AudioRaiseVolume,	           spawn,	   SHCMD("/usr/bin/pulseaudio-ctl up && sound-notification && kill -39 $(pidof dwmblocks)") },
-	{ 0, XF86XK_AudioLowerVolume,		   spawn,	   SHCMD("/usr/bin/pulseaudio-ctl down && sound-notification && kill -39 $(pidof dwmblocks)") },
+	{ 0, XF86XK_AudioMute,		           spawn,     	   SHCMD("pamixerpamixer -t && sound-notification && kill -39 $(pidof dwmblocks)") },
+	{ 0, XF86XK_AudioRaiseVolume,	           spawn,	   SHCMD("pamixer --allow-boost -i 10 && sound-notification && kill -39 $(pidof dwmblocks)") },
+	{ 0, XF86XK_AudioLowerVolume,		   spawn,	   SHCMD("pamixer --allow-boost -d 10 && sound-notification && kill -39 $(pidof dwmblocks)") },
 	{ 0, XF86XK_AudioPrev,		           spawn,	   SHCMD("playerctl --player=playerctld previous && dunst-music-notification") },
 	{ 0, XF86XK_AudioNext,		           spawn,	   SHCMD("playerctl --player=playerctld next && dunst-music-notification") },
 	{ 0, XF86XK_AudioPlay,        	           spawn,	   SHCMD("playerctl --player=playerctld play-pause && dunst-music-notification") },
