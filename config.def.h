@@ -122,6 +122,7 @@ static Key keys[] = {
 
 /*apps launch with superkey*/	
 	{ MODKEY,			XK_d,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,			XK_p,      spawn,          SHCMD("keepmenu") },
 	{ MODKEY,			XK_w,      spawn,          SHCMD("librewolf") },
 	{ MODKEY,			XK_c,      spawn,          SHCMD("chromium") },
 	{ MODKEY,			XK_e,      spawn,          SHCMD("dmenuemoji") },
