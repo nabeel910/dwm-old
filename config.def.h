@@ -38,7 +38,6 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      			instance    title       tags mask     	     switchtotag          isfloating   monitor */
-	{ "Galculator",       		NULL,        NULL,         0,                    0,                  1,           -1 },
 	{ "Pavucontrol",      		NULL,        NULL,         0,                    0,                  1,           -1 },
 	{ "Blueman-manager",      	NULL,        NULL,         0,                    0,                  1,           -1 },
 	{ "LibreWolf",        		NULL,        NULL,         1 ,                   1,                  0,           -1 },
@@ -126,7 +125,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_w,      spawn,          SHCMD("librewolf") },
 	{ MODKEY,			XK_c,      spawn,          SHCMD("chromium") },
 	{ MODKEY,			XK_e,      spawn,          SHCMD("dmenuemoji") },
-	{ MODKEY,		     	XK_g,      spawn,          SHCMD("galculator") },
+	{ MODKEY,		     	XK_g,      spawn,          SHCMD("= --dmenu='dmenu -i -l 3'") },
 	{ MODKEY,     			XK_t,      spawn,          SHCMD(TERMINAL " --class tremc -t tremc  -e tremc") },
 	{ MODKEY,			XK_n,      spawn,          SHCMD("thunar") },
 	{ MODKEY,			XK_r,      spawn,          SHCMD(TERMINAL " -e newsboat") },
@@ -137,7 +136,7 @@ static Key keys[] = {
 
 
 //apps launch with super+shift
-	{ MODKEY|ShiftMask,     	XK_w,      spawn,          SHCMD("networkmanager_dmenu") },
+	{ MODKEY|ShiftMask,     	XK_w,      spawn,          SHCMD("dmenu-network") },
 	{ MODKEY|ShiftMask,     	XK_p,      spawn,          SHCMD(TERMINAL " --class pacman-packages,pacman-packages -t update  -e paru -Syu") },
 	{ MODKEY|ShiftMask,     	XK_v,      spawn,          SHCMD(TERMINAL " --class set-bg -t set-bg  -e viewwalls") },
 	{ MODKEY|ShiftMask,		XK_k,      spawn,          SHCMD("pirokit") },
@@ -157,8 +156,7 @@ static Key keys[] = {
 	{ 0, XF86XK_AudioPlay,        	           spawn,	   SHCMD("playerctl --player=playerctld play-pause && dunst-music-notification") },
 	{ 0, XF86XK_MonBrightnessUp,	           spawn,	   SHCMD("xbacklight -inc 15 && brightness") },
 	{ 0, XF86XK_MonBrightnessDown,	           spawn,	   SHCMD("xbacklight -dec 15 && brightness") },
-	{ 0, XK_Print,			           spawn,          SHCMD("flameshot full -p ~/pics/screenshots/") },
-	{ ShiftMask, XK_Print,			   spawn,          SHCMD("flameshot gui") },
+	{ 0, XK_Print,			           spawn,          SHCMD("dm-screenshot") },
 };
 
 /* button definitions */
