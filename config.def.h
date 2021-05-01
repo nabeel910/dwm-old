@@ -156,7 +156,7 @@ static Key keys[] = {
 	{ 0, XF86XK_AudioPlay,        	           spawn,	   SHCMD("playerctl --player=playerctld play-pause && dunst-music-notification") },
 	{ 0, XF86XK_MonBrightnessUp,	           spawn,	   SHCMD("xbacklight -inc 15 && brightness") },
 	{ 0, XF86XK_MonBrightnessDown,	           spawn,	   SHCMD("xbacklight -dec 15 && brightness") },
-	{ 0, XK_Print,			           spawn,          SHCMD("dm-screenshot") },
+	{ 0, XK_Print,			           spawn,          SHCMD("dmenu-screenshot") },
 };
 
 /* button definitions */
