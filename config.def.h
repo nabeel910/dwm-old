@@ -137,6 +137,7 @@ static Key keys[] = {
 
 //apps launch with super+shift
 	{ MODKEY|ShiftMask,     	XK_w,      spawn,          SHCMD("dmenu-network") },
+	{ MODKEY|ShiftMask,     	XK_r,      spawn,          SHCMD("randomwall") },
 	{ MODKEY|ShiftMask,     	XK_p,      spawn,          SHCMD(TERMINAL " --class pacman-packages,pacman-packages -t update  -e paru -Syu") },
 	{ MODKEY|ShiftMask,     	XK_v,      spawn,          SHCMD(TERMINAL " --class set-bg -t set-bg  -e viewwalls") },
 	{ MODKEY|ShiftMask,		XK_k,      spawn,          SHCMD("pirokit") },
