@@ -128,7 +128,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_e,      spawn,          SHCMD("dmenuemoji") },
 	{ MODKEY,		     	XK_g,      spawn,          SHCMD("= --dmenu='dmenu -i -l 3'") },
 	{ MODKEY,     			XK_t,      spawn,          SHCMD(TERMINAL " --class tremc -t tremc  -e tremc") },
-	{ MODKEY,			XK_n,      spawn,          SHCMD("TERMINAL " -e lf") },
+	{ MODKEY,			XK_n,      spawn,          SHCMD(TERMINAL " -e lf") },
 	{ MODKEY,			XK_r,      spawn,          SHCMD(TERMINAL " -e newsboat") },
 	{ MODKEY,			XK_a,      spawn,          SHCMD("animeseries") },
 	{ MODKEY,			XK_m,      spawn,          SHCMD(TERMINAL " -e cmus") },
