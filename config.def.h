@@ -128,7 +128,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_e,      spawn,          SHCMD("dmenuemoji") },
 	{ MODKEY,		     	XK_g,      spawn,          SHCMD("= --dmenu='dmenu -i -l 3'") },
 	{ MODKEY,     			XK_t,      spawn,          SHCMD(TERMINAL " --class tremc -t tremc  -e tremc") },
-	{ MODKEY,			XK_n,      spawn,          SHCMD("pcmanfm") },
+	{ MODKEY,			XK_n,      spawn,          SHCMD("TERMINAL " -e lf") },
 	{ MODKEY,			XK_r,      spawn,          SHCMD(TERMINAL " -e newsboat") },
 	{ MODKEY,			XK_a,      spawn,          SHCMD("animeseries") },
 	{ MODKEY,			XK_m,      spawn,          SHCMD(TERMINAL " -e cmus") },
@@ -137,7 +137,8 @@ static Key keys[] = {
 
 
 //apps launch with super+shift
-	{ MODKEY|ShiftMask,     	XK_w,      spawn,          SHCMD("dmenu-network") },
+	{ MODKEY|ShiftMask,     	XK_w,      spawn,          SHCMD("networkmanager_dmenu") },
+	{ MODKEY|ShiftMask,     	XK_n,      spawn,          SHCMD("pmcmanfm") },
 	{ MODKEY|ShiftMask,     	XK_r,      spawn,          SHCMD("randomwall") },
 	{ MODKEY|ShiftMask,     	XK_p,      spawn,          SHCMD(TERMINAL " --class pacman-packages,pacman-packages -t update  -e paru -Syu") },
 	{ MODKEY|ShiftMask,     	XK_v,      spawn,          SHCMD(TERMINAL " --class set-bg -t set-bg  -e viewwalls") },
